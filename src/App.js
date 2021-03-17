@@ -5,7 +5,8 @@ import darkTheme from "./theme/dark";
 import Container from "./theme/components/Container"
 import { ThemeProvider } from "styled-components";
 import { darkModeAction } from './actions/config_action';
-
+import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Chat from "./Components/Chat/Chat";
 import Join from "./Components/Join/Join";
 import SignUp from "./Components/SignUp/SignUp";
@@ -31,8 +32,8 @@ function App() {
   return (
     <ThemeProvider theme={config.darkMode === "light" ? lightTheme : darkTheme}>
       <nav style={{ width: '100%', padding: '2rem 0 ', backgroundColor: 'gray', textAlign: 'center' }}>
-        <button onClick={() => themeChange('dark')}>Dark Mode</button>
-        <button onClick={() => themeChange('light')}>Light Mode</button>
+        <Button variant="dark" onClick={() => themeChange('dark')}>Dark Mode</Button>
+        <Button variant="light" onClick={() => themeChange('light')}>Light Mode</Button>
       </nav>
 
       <Container >

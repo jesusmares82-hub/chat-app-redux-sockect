@@ -15,7 +15,7 @@ const TextContainer = ({ users }) => (
             {users.map(({ name, i }) => (
               <div key={name.id+i} className="activeItem">
                 <FcOnlineSupport />
-                <span style={{ color: "black", marginLeft: 8 }}>{name.charAt(0).toUpperCase() + name.slice(1)}</span> 
+                <span style={{  marginLeft: 8 }}>{name.charAt(0).toUpperCase() + name.slice(1)}</span> 
                 
               </div>
             ))}

@@ -13,7 +13,7 @@ const ChatHeader = ({ room }) => (
     </div>
     <div className="centerInnerContainer"><h3>Websocket Chat</h3></div>
     <div className="rightInnerContainer">
-      <a href="/"> <IoMdCloseCircle /></a>
+      <a style={{ color: "white" }} href="/"> <IoMdCloseCircle /></a>
     </div>
   </div>
 );

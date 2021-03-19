@@ -31,9 +31,6 @@ const room = useSelector((state) => state.chat.roomToJoin);
         }
       });
 
-      
-
-      socket.on("error", (err) => console.log(err));
 
       socket.emit("join", { name: username, room }, (error) => {
         if (error) {

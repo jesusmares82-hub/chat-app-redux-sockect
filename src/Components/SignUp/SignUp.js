@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 import { HiOutlineLogin} from "react-icons/hi";
 import { SiGnuprivacyguard} from "react-icons/si";
 
-import "../SignUp/SignUp.css";
 
 const SignUp = () => {
   const { register, handleSubmit } = useForm();
